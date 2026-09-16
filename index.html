@@ -416,14 +416,20 @@ routeReply(intent, urgency, requestedService)</pre>
 
     const openedFromCommunity = new URLSearchParams(window.location.search).get('from') === 'community';
     if(openedFromCommunity){
-      $('#community-heading').textContent = 'Know someone who should be building this?';
-      $('#community-line-one').textContent = 'Forward the blueprint to an operator who can use it.';
+      $('#community-heading').textContent = 'Pass this to someone who needs it';
+      $('#community-line-one').textContent = 'Share it with a friend. Share it with a business owner. Share it with someone who could be your client.';
       $('#community-line-two').hidden = true;
       const communityAction = $('#community-action');
       const shareText = 'Free blueprint: the missed-call text-back system\nhttps://blueprint.nobsai.com';
       communityAction.textContent = 'Share on WhatsApp';
       communityAction.href = 'https://wa.me/?text=' + encodeURIComponent(shareText);
       communityAction.setAttribute('aria-label', 'Share this blueprint on WhatsApp');
+      const copyLink = document.createElement('button');
+      copyLink.className = 'btn secondary';
+      copyLink.id = 'copyShareLink';
+      copyLink.textContent = 'Copy the link';
+      copyLink.addEventListener('click', () => copyText(shareText));
+      communityAction.insertAdjacentElement('afterend', copyLink);
     }
 
     const templates = {
