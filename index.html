@@ -1,13 +1,498 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>No BS AI — Missed-Call Text-Back Blueprint</title>
-<meta http-equiv="refresh" content="0; url=https://muse.ai/s/missed-call-text-back-blueprint-xno6rxhxggxhxjxm7">
-<script>window.location.replace("https://muse.ai/s/missed-call-text-back-blueprint-xno6rxhxggxhxjxm7");</script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="light dark" />
+  <link rel="icon" href="data:," />
+  <title>Missed-Call Text-Back Blueprint</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      color-scheme:light dark;
+      --paper:#f3f0e7;
+      --ink:#171815;
+      --muted:#595b52;
+      --line:#c7c2b3;
+      --panel:#fffdf5;
+      --panel-2:#e8e4d8;
+      --red:#e9482d;
+      --green:#287653;
+      --yellow:#e7bd3f;
+      --shadow:6px 6px 0 var(--ink);
+      --radius:3px;
+    }
+    @media (prefers-color-scheme:dark){
+      :root{
+        --paper:#171915;
+        --ink:#f4f0e6;
+        --muted:#b8b7ac;
+        --line:#4a4c44;
+        --panel:#21231f;
+        --panel-2:#2b2e28;
+        --red:#ff674c;
+        --green:#6bc39a;
+        --yellow:#f4ce55;
+        --shadow:6px 6px 0 #060706;
+      }
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      min-width:0;
+      background:var(--paper);
+      color:var(--ink);
+      font-family:"Archivo",sans-serif;
+      line-height:1.5;
+      overflow-x:hidden;
+    }
+    button,input,select{font:inherit}
+    button{color:inherit}
+    a{color:inherit}
+    .shell{max-width:1240px;margin:0 auto;padding:30px clamp(18px,4vw,56px) 80px}
+    .hero{
+      border-top:8px solid var(--ink);
+      border-bottom:2px solid var(--ink);
+      padding:clamp(34px,7vw,78px) 0 34px;
+      display:grid;
+      grid-template-columns:minmax(0,1.45fr) minmax(260px,.55fr);
+      gap:36px;
+      align-items:end;
+    }
+    .stamp{font:600 12px/1.2 "IBM Plex Mono",monospace;letter-spacing:.08em;text-transform:uppercase;color:var(--red);margin-bottom:14px}
+    h1{font-size:clamp(44px,8vw,102px);line-height:.88;letter-spacing:-.065em;margin:0;max-width:900px;font-weight:800}
+    h1 span{display:block;color:var(--red)}
+    .hero-copy{font-size:clamp(18px,2.3vw,27px);line-height:1.28;margin:25px 0 0;max-width:720px;font-weight:500}
+    .route-box{background:var(--yellow);color:#151611;border:2px solid var(--ink);padding:20px;box-shadow:var(--shadow);transform:rotate(1deg)}
+    .route-box label{display:block;font:600 12px "IBM Plex Mono",monospace;text-transform:uppercase;margin-bottom:10px}
+    .route-box select{width:100%;background:#fffdf5;color:#171815;border:2px solid #171815;border-radius:0;padding:13px 36px 13px 12px;font-weight:700}
+    .route-note{font:500 13px/1.45 "IBM Plex Mono",monospace;margin:13px 0 0}
+
+    .layout{display:grid;grid-template-columns:210px minmax(0,1fr);gap:50px;margin-top:42px}
+    nav{position:sticky;top:20px;align-self:start;border-top:2px solid var(--ink);padding-top:12px}
+    nav a{display:flex;gap:10px;align-items:baseline;text-decoration:none;padding:8px 0;border-bottom:1px solid var(--line);font-size:14px;font-weight:600}
+    nav a span{font:500 11px "IBM Plex Mono",monospace;color:var(--red)}
+    nav a:hover,nav a:focus-visible{color:var(--red)}
+    main{min-width:0}
+    section{padding:20px 0 74px;scroll-margin-top:20px}
+    .section-num{font:600 12px "IBM Plex Mono",monospace;color:var(--red);letter-spacing:.08em;text-transform:uppercase}
+    h2{font-size:clamp(30px,4.5vw,55px);line-height:1;letter-spacing:-.045em;margin:8px 0 15px}
+    .lede{font-size:19px;max-width:760px;color:var(--muted);margin:0 0 28px}
+    .callout{border-left:7px solid var(--red);padding:10px 0 10px 20px;font-size:20px;font-weight:700;max-width:760px;margin:28px 0}
+
+    .flow{display:grid;grid-template-columns:repeat(5,1fr);border:2px solid var(--ink);background:var(--panel)}
+    .flow-step{padding:18px 14px;min-height:168px;border-right:2px solid var(--ink);position:relative}
+    .flow-step:last-child{border-right:0}
+    .flow-step::after{content:"→";position:absolute;right:-13px;top:18px;background:var(--red);color:white;width:24px;height:24px;display:grid;place-items:center;border-radius:50%;z-index:2;font-weight:800}
+    .flow-step:last-child::after{display:none}
+    .flow-num{font:600 11px "IBM Plex Mono",monospace;color:var(--red)}
+    .flow-step h3{font-size:18px;line-height:1.1;margin:28px 0 8px}
+    .flow-step p{font-size:13px;line-height:1.45;margin:0;color:var(--muted)}
+    .optional{background:var(--panel-2)}
+    .optional .flow-num::after{content:" · OPTIONAL"}
+
+    .stack{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .stack-layer{border-top:5px solid var(--ink);background:var(--panel);padding:20px;min-height:190px}
+    .stack-layer:nth-child(2){border-color:var(--red)}
+    .stack-layer:nth-child(3){border-color:var(--green)}
+    .stack-layer:nth-child(4){border-color:var(--yellow)}
+    .stack-layer h3{margin:0 0 8px;font-size:22px}
+    .stack-layer p{margin:0 0 14px;color:var(--muted)}
+    .stack-layer ul{margin:0;padding-left:19px}
+    .stack-layer li{margin:6px 0}
+    .tag{display:inline-block;font:500 11px "IBM Plex Mono",monospace;border:1px solid var(--line);padding:4px 7px;margin:8px 5px 0 0;background:var(--paper)}
+
+    .code-wrap{background:#11130f;color:#f5f1e7;border:2px solid var(--ink);box-shadow:var(--shadow);margin:24px 6px 8px 0}
+    .code-head{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #484b43;padding:10px 14px;font:500 11px "IBM Plex Mono",monospace;color:#bfc2b7}
+    pre{white-space:pre-wrap;overflow-wrap:anywhere;margin:0;padding:22px;font:400 13px/1.7 "IBM Plex Mono",monospace}
+    .code-comment{color:#88a888}.code-key{color:#ff765f}.code-value{color:#f4d36a}
+
+    .copy-lab{border:2px solid var(--ink);background:var(--panel);display:grid;grid-template-columns:260px 1fr}
+    .lab-controls{padding:22px;border-right:2px solid var(--ink);background:var(--panel-2)}
+    .lab-controls label{display:block;font:600 11px "IBM Plex Mono",monospace;text-transform:uppercase;margin:0 0 7px}
+    .lab-controls select{width:100%;border:1.5px solid var(--ink);background:var(--panel);padding:10px;margin-bottom:18px;border-radius:0}
+    .lab-output{padding:22px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-width:0}
+    .message{font-size:20px;line-height:1.45;max-width:680px;white-space:pre-wrap}
+    .message-meta{font:500 11px "IBM Plex Mono",monospace;color:var(--muted)}
+    .btn{border:2px solid var(--ink);background:var(--ink);color:var(--paper);padding:11px 15px;font-weight:700;cursor:pointer;border-radius:0;box-shadow:3px 3px 0 var(--red);width:max-content;max-width:100%}
+    .btn:hover{transform:translate(1px,1px);box-shadow:2px 2px 0 var(--red)}
+    .btn.secondary{background:var(--panel);color:var(--ink);box-shadow:none}
+    .btn:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+
+    .calculator{background:var(--green);color:#fffdf5;padding:clamp(22px,4vw,40px);display:grid;grid-template-columns:1.1fr .9fr;gap:36px;border:2px solid var(--ink)}
+    .calc-field{margin-bottom:20px}
+    .calc-field label{display:flex;justify-content:space-between;gap:14px;font:500 12px "IBM Plex Mono",monospace;margin-bottom:8px}
+    input[type="range"]{width:100%;accent-color:var(--yellow)}
+    .result{border-left:2px solid rgba(255,255,255,.55);padding-left:30px;display:flex;flex-direction:column;justify-content:center}
+    .result-label{font:500 11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em}
+    .result-number{font-size:clamp(44px,7vw,78px);font-weight:800;line-height:1;letter-spacing:-.05em;margin:8px 0}
+    .result-note{font-size:13px;opacity:.9;margin:0}
+
+    .steps{counter-reset:steps;display:grid;gap:0;border-top:2px solid var(--ink)}
+    .step{counter-increment:steps;display:grid;grid-template-columns:74px minmax(0,1fr);gap:20px;padding:25px 0;border-bottom:1px solid var(--line)}
+    .step::before{content:counter(steps,decimal-leading-zero);font:600 27px "IBM Plex Mono",monospace;color:var(--red)}
+    .step h3{margin:0 0 6px;font-size:21px}
+    .step p{margin:0;color:var(--muted);max-width:720px}
+    .step .mini{margin-top:10px;font:500 12px/1.5 "IBM Plex Mono",monospace;color:var(--ink)}
+
+    .sell-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:22px}
+    .offer{background:var(--red);color:white;padding:28px;border:2px solid var(--ink);transform:rotate(-.5deg)}
+    .offer h3{font-size:30px;line-height:1.05;margin:0 0 20px}
+    .offer ul{padding-left:20px;margin:0}
+    .offer li{margin:10px 0}
+    .pitch{border:2px dashed var(--ink);padding:26px;background:var(--panel)}
+    .pitch h3{margin-top:0}
+    .pitch p{font-size:18px;line-height:1.5}
+    .route-only{display:none}
+    body[data-route="sell"] .sell-route{display:block}
+    body[data-route="own"] .own-route{display:block}
+
+    .guardrails{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .guardrail{background:var(--panel);padding:20px;border-top:4px solid var(--red)}
+    .guardrail strong{display:block;font-size:18px;margin-bottom:7px}
+    .guardrail p{margin:0;color:var(--muted);font-size:14px}
+
+    .download-box{border:2px solid var(--ink);padding:25px;background:var(--yellow);color:#171815;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .download-box h3{margin:0 0 5px;font-size:24px}
+    .download-box p{margin:0}
+    .community-close{border-top:8px solid var(--ink);border-bottom:2px solid var(--ink);padding:clamp(28px,5vw,52px) 0;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:32px;align-items:end}
+    .community-close h2{margin:0 0 14px;max-width:700px}
+    .community-close p{margin:3px 0;font-size:18px;font-weight:500}
+    .community-close .btn{display:inline-block;text-decoration:none;white-space:nowrap;margin:0 4px 4px 0}
+    footer{padding-top:18px;font:500 11px/1.5 "IBM Plex Mono",monospace;color:var(--muted)}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:11px 16px;font:600 12px "IBM Plex Mono",monospace;opacity:0;pointer-events:none;transition:.2s;z-index:10;border:1px solid var(--paper)}
+    .toast.show{opacity:1;transform:translate(-50%,0)}
+
+    @media(max-width:860px){
+      .hero{grid-template-columns:1fr;align-items:start}.route-box{max-width:480px}
+      .layout{grid-template-columns:1fr;gap:20px}
+      nav{position:static;display:flex;flex-wrap:wrap;gap:7px;border-top:0;padding-top:0}
+      nav a{border:1px solid var(--line);padding:7px 9px;background:var(--panel);font-size:12px}
+      nav a span{display:none}
+      .flow{grid-template-columns:1fr 1fr}
+      .flow-step{border-bottom:2px solid var(--ink)}
+      .flow-step:nth-child(2n){border-right:0}
+      .flow-step:last-child{border-bottom:0;border-right:2px solid var(--ink);grid-column:1/-1;min-height:auto}
+      .flow-step::after{display:none}
+      .copy-lab{grid-template-columns:1fr}.lab-controls{border-right:0;border-bottom:2px solid var(--ink)}
+      .calculator,.sell-grid{grid-template-columns:1fr}.result{border-left:0;border-top:2px solid rgba(255,255,255,.55);padding:24px 0 0}
+      .guardrails{grid-template-columns:1fr}
+      .community-close{grid-template-columns:1fr;align-items:start}
+    }
+    @media(max-width:560px){
+      .shell{padding:18px 16px 60px}
+      .hero{padding-top:36px}
+      h1{font-size:52px}
+      .hero-copy{font-size:18px}
+      .stack{grid-template-columns:1fr}
+      .flow{grid-template-columns:1fr}.flow-step,.flow-step:nth-child(2n),.flow-step:last-child{border-right:0;border-bottom:2px solid var(--ink);grid-column:auto;min-height:auto}.flow-step:last-child{border-bottom:0}
+      .message{font-size:17px}
+      .step{grid-template-columns:52px minmax(0,1fr);gap:10px}
+      .download-box{align-items:flex-start;flex-direction:column}
+      .btn{width:100%;text-align:center}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.toast{transition:none}}
+    @media print{nav,.route-box,.btn,.calculator input{display:none!important}.layout{display:block}.shell{max-width:none}.hero{grid-template-columns:1fr}.code-wrap{box-shadow:none}.offer{transform:none}.toast{display:none}section{break-inside:avoid;padding-bottom:32px}}
+  </style>
 </head>
-<body>
-<p>Opening the Missed-Call Text-Back Blueprint… <a href="https://muse.ai/s/missed-call-text-back-blueprint-xno6rxhxggxhxjxm7">tap here if nothing happens</a>.</p>
+<body data-route="own">
+  <div class="shell">
+    <header class="hero">
+      <div>
+        <div class="stamp">The 60-minute build · vendor-neutral</div>
+        <h1>MISS <span>→ TEXT → BOOK</span></h1>
+        <p class="hero-copy">Build a missed-call text-back system for your own business—or package the same skill for a local business.</p>
+      </div>
+      <div class="route-box">
+        <label for="route">Choose your route</label>
+        <select id="route">
+          <option value="own">Use it in my business</option>
+          <option value="sell">Offer it as a service</option>
+        </select>
+        <p class="route-note" id="routeNote">You’ll focus on speed, routing, and a clean handoff to your team.</p>
+      </div>
+    </header>
+
+    <div class="layout">
+      <nav aria-label="Blueprint sections">
+        <a href="#understand"><span>01</span> Understand</a>
+        <a href="#stack"><span>02</span> Pick the stack</a>
+        <a href="#build"><span>03</span> Build it</a>
+        <a href="#copy"><span>04</span> Write the texts</a>
+        <a href="#test"><span>05</span> Test it</a>
+        <a href="#value"><span>06</span> Size the value</a>
+        <a href="#offer"><span>07</span> Package it</a>
+        <a href="#guardrails"><span>08</span> Guardrails</a>
+      </nav>
+
+      <main>
+        <section id="understand">
+          <div class="section-num">01 · Understand the machine</div>
+          <h2>One event. One fast reply. One human handoff.</h2>
+          <p class="lede">The system does not need to “run the business.” Its first job is smaller: acknowledge a caller quickly, learn what they need, and move the conversation to the right next step.</p>
+          <div class="flow" aria-label="Missed call workflow">
+            <div class="flow-step"><div class="flow-num">EVENT</div><h3>Call is missed</h3><p>The phone system emits a missed/no-answer event with the caller’s number.</p></div>
+            <div class="flow-step"><div class="flow-num">FILTER</div><h3>Check the rules</h3><p>Ignore blocked numbers, duplicates, after-hours exceptions, and known spam.</p></div>
+            <div class="flow-step"><div class="flow-num">MESSAGE</div><h3>Send the text</h3><p>A short, human reply goes out from a business-owned number.</p></div>
+            <div class="flow-step optional"><div class="flow-num">ASSIST</div><h3>Classify the reply</h3><p>AI can draft or route. Keep high-stakes answers and final decisions with a person.</p></div>
+            <div class="flow-step"><div class="flow-num">HANDOFF</div><h3>Book or alert</h3><p>Offer the next step, create the lead, and notify the right teammate.</p></div>
+          </div>
+          <div class="callout">The valuable part is not “AI.” It is closing the gap between an unanswered phone and the next useful action.</div>
+        </section>
+
+        <section id="stack">
+          <div class="section-num">02 · Pick the stack</div>
+          <h2>Four layers. Swap vendors without changing the blueprint.</h2>
+          <p class="lede">Use tools the business already trusts when possible. The architecture matters more than the logo on each box.</p>
+          <div class="stack">
+            <article class="stack-layer"><h3>1. Call event</h3><p>Detect no-answer, busy, or voicemail events and capture a callback number.</p><span class="tag">Cloud phone</span><span class="tag">Call tracking</span><span class="tag">Webhook</span></article>
+            <article class="stack-layer"><h3>2. Orchestrator</h3><p>Receive the event, deduplicate, apply business rules, and call the next service.</p><span class="tag">n8n</span><span class="tag">Make</span><span class="tag">Custom function</span></article>
+            <article class="stack-layer"><h3>3. Messaging</h3><p>Send and receive SMS from a registered business number with delivery logs.</p><span class="tag">SMS provider</span><span class="tag">Shared inbox</span></article>
+            <article class="stack-layer"><h3>4. Destination</h3><p>Route the conversation into the team’s existing process.</p><span class="tag">CRM</span><span class="tag">Calendar</span><span class="tag">Team alert</span></article>
+          </div>
+        </section>
+
+        <section id="build">
+          <div class="section-num">03 · Build it</div>
+          <h2>The minimum reliable workflow</h2>
+          <p class="lede">Start deterministic. Add AI only after the basic event, message, and handoff work every time.</p>
+          <div class="code-wrap" aria-label="Workflow pseudocode">
+            <div class="code-head"><span>WORKFLOW PSEUDOCODE</span><button class="btn secondary copy-code" data-copy="codeText">Copy</button></div>
+            <pre id="codeText"><span class="code-comment">// Triggered by a missed-call event</span>
+<span class="code-key">if</span> !event.callerNumber → stop
+<span class="code-key">if</span> event.callerNumber in blocklist → stop
+<span class="code-key">if</span> same number was handled in last <span class="code-value">15 minutes</span> → stop
+
+business = lookup(event.dialedNumber)
+message = template(business.name, business.replyWindow)
+
+sendSMS(from: business.smsNumber,
+        to: event.callerNumber,
+        body: message)
+
+createOrUpdateLead(callerNumber, source: <span class="code-value">"missed-call"</span>)
+notifyTeam(owner, callerNumber, deliveryStatus)
+log(eventId, sentAt, status)
+
+<span class="code-comment">// Optional only after the reply arrives</span>
+routeReply(intent, urgency, requestedService)</pre>
+          </div>
+          <div class="steps">
+            <article class="step"><div><h3>Catch a real event</h3><p>Place a test call, let it ring out, and inspect the exact payload. Build from the fields you actually receive—not fields a diagram promises.</p><div class="mini">SAVE: event ID · caller number · called number · timestamp · disposition</div></div></article>
+            <article class="step"><div><h3>Deduplicate before sending</h3><p>Phone systems may emit more than one event. Create an idempotency key from the event ID, or the caller number plus a short time window.</p></div></article>
+            <article class="step"><div><h3>Map numbers to businesses</h3><p>If you manage more than one location or client, keep business name, hours, reply text, owner, and destination calendar in a simple configuration table.</p></div></article>
+            <article class="step"><div><h3>Send, log, and expose failures</h3><p>Store the provider message ID and delivery status. Alert a person if the send fails; do not silently drop the lead.</p></div></article>
+            <article class="step"><div><h3>Handle the inbound reply</h3><p>Start with routing rules: service question, schedule request, urgent issue, or opt-out. AI may draft, but a human should own ambiguous or sensitive replies.</p></div></article>
+          </div>
+        </section>
+
+        <section id="copy">
+          <div class="section-num">04 · Write the texts</div>
+          <h2>Sound like a person who just missed the phone.</h2>
+          <p class="lede">Short, specific, and easy to answer. Choose a trade and stage to generate a starter message, then edit it to match the business.</p>
+          <div class="copy-lab">
+            <div class="lab-controls">
+              <label for="trade">Business type</label>
+              <select id="trade"><option value="general">General service</option><option value="plumber">Plumber</option><option value="hvac">HVAC</option><option value="dental">Dental office</option><option value="auto">Auto repair</option></select>
+              <label for="stage">Message</label>
+              <select id="stage"><option value="first">Immediate text-back</option><option value="reply">Reply after they respond</option><option value="after">After-hours version</option></select>
+            </div>
+            <div class="lab-output">
+              <div><div class="message" id="messageText"></div><div class="message-meta" id="messageMeta"></div></div>
+              <button class="btn" id="copyMessage">Copy this text</button>
+            </div>
+          </div>
+          <div class="callout">Never pretend the text is a human response if it is automated. “Automated reply” can be both honest and warm.</div>
+        </section>
+
+        <section id="test">
+          <div class="section-num">05 · Test it</div>
+          <h2>Six calls before you call it done.</h2>
+          <p class="lede">Run the same test from two different phones. Record timestamps and message IDs so a failure is diagnosable.</p>
+          <div class="steps">
+            <article class="step"><div><h3>Normal missed call</h3><p>Let the call ring out. Confirm one—and only one—text arrives, the business name is correct, and the reply goes to the right inbox.</p></div></article>
+            <article class="step"><div><h3>Duplicate event</h3><p>Trigger two missed calls close together. Confirm the deduplication rule prevents a message pile-on.</p></div></article>
+            <article class="step"><div><h3>Known customer</h3><p>Call from a number already in the CRM. Confirm the lead is updated rather than duplicated.</p></div></article>
+            <article class="step"><div><h3>After hours</h3><p>Confirm the message sets a truthful expectation and does not promise an immediate human reply.</p></div></article>
+            <article class="step"><div><h3>Opt-out</h3><p>Reply STOP. Confirm future automated texts from that sender are suppressed and the status is visible.</p></div></article>
+            <article class="step"><div><h3>Provider failure</h3><p>Use a safe test condition to make a send fail. Confirm the workflow alerts the operator instead of reporting success.</p></div></article>
+          </div>
+        </section>
+
+        <section id="value">
+          <div class="section-num">06 · Size the value</div>
+          <h2>Use the owner’s numbers, not made-up case studies.</h2>
+          <p class="lede">This calculator is a conversation starter—not a revenue promise. Adjust every input with the business owner.</p>
+          <div class="calculator">
+            <div>
+              <div class="calc-field"><label for="missed"><span>Missed calls / week</span><strong id="missedVal">20</strong></label><input id="missed" type="range" min="1" max="150" value="20"></div>
+              <div class="calc-field"><label for="job"><span>Average completed job value</span><strong id="jobVal">$300</strong></label><input id="job" type="range" min="25" max="2500" step="25" value="300"></div>
+              <div class="calc-field"><label for="recover"><span>Illustrative recovered-job rate</span><strong id="recoverVal">10%</strong></label><input id="recover" type="range" min="1" max="40" value="10"></div>
+            </div>
+            <div class="result">
+              <div class="result-label">Illustrative monthly recovered value</div>
+              <div class="result-number" id="resultNumber">$2,598</div>
+              <p class="result-note">Formula: weekly missed calls × rate × job value × 4.33 weeks. Actual results depend on call quality, capacity, response handling, and close rate.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="offer">
+          <div class="section-num">07 · Package the skill</div>
+          <h2>Sell the outcome. Scope the system.</h2>
+          <p class="lede own-route route-only">Once your own workflow is stable, document it. The same installation can become a focused offer for another local business.</p>
+          <p class="lede sell-route route-only">Lead with the missed-call gap, demonstrate the reply on the owner’s phone, and make support boundaries explicit.</p>
+          <div class="sell-grid">
+            <div class="offer">
+              <h3>A clean starter offer</h3>
+              <ul>
+                <li>Connect one phone line</li>
+                <li>Write and approve three messages</li>
+                <li>Route replies to one shared inbox</li>
+                <li>Create or update leads in the CRM</li>
+                <li>Run six acceptance tests</li>
+                <li>Train the team on handoff and opt-outs</li>
+                <li>Monitor delivery failures during the support window</li>
+              </ul>
+            </div>
+            <div class="pitch">
+              <h3>30-second owner pitch</h3>
+              <p id="pitchText">“When your team misses a call, how long does it take that person to hear back? I build a simple text-back system that acknowledges the call, asks what they need, and routes the reply to your team. I can show you the whole flow on one missed call—no slide deck.”</p>
+              <button class="btn" data-copy="pitchText">Copy pitch</button>
+            </div>
+          </div>
+          <div class="callout">Price the install from your actual software cost, setup time, support load, and business risk. Do not promise a specific number of bookings you have not proven.</div>
+        </section>
+
+        <section id="guardrails">
+          <div class="section-num">08 · Guardrails</div>
+          <h2>Fast does not mean careless.</h2>
+          <p class="lede">Messaging rules vary by country, carrier, use case, and provider. Treat compliance and customer experience as part of the build—not cleanup.</p>
+          <div class="guardrails">
+            <div class="guardrail"><strong>Identify the business</strong><p>The recipient should immediately know who is texting and why.</p></div>
+            <div class="guardrail"><strong>Honor opt-outs</strong><p>Respect STOP and equivalent requests. Keep suppression status across every automation path.</p></div>
+            <div class="guardrail"><strong>Register the sender</strong><p>Use a business messaging setup approved for the sender’s region and traffic type.</p></div>
+            <div class="guardrail"><strong>Protect sensitive data</strong><p>Do not ask people to text payment cards, medical details, passwords, or other sensitive information.</p></div>
+            <div class="guardrail"><strong>Set honest timing</strong><p>After-hours messages should not imply that a person is available when no one is monitoring replies.</p></div>
+            <div class="guardrail"><strong>Keep a human escape hatch</strong><p>Make urgent, angry, ambiguous, and high-stakes replies easy to route to a person.</p></div>
+          </div>
+        </section>
+
+        <section>
+          <div class="download-box">
+            <div><h3>Take the blueprint with you</h3><p>Download the build brief, test plan, message starter, and offer scope as a plain-text working document.</p></div>
+            <button class="btn" id="downloadBrief">Download brief</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <section class="community-close" aria-labelledby="community-heading">
+      <div>
+        <h2 id="community-heading">Get the next blueprint first</h2>
+        <p id="community-line-one">One practical tactic like this drops every week.</p>
+        <p id="community-line-two">Free, in the No BS AI Secrets WhatsApp community.</p>
+      </div>
+      <a class="btn" id="community-action" href="https://chat.nobsai.com" target="_blank" rel="noopener noreferrer">Join the free community</a>
+    </section>
+
+    <footer>Educational blueprint · Validate messaging rules, registrations, and consent requirements for the business and region before launch.</footer>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+  <script>
+    const $ = (s) => document.querySelector(s);
+    const route = $('#route');
+    const routeNote = $('#routeNote');
+    route.addEventListener('change', () => {
+      document.body.dataset.route = route.value;
+      routeNote.textContent = route.value === 'sell'
+        ? 'You’ll focus on a tight demo, client inputs, acceptance tests, and a support boundary.'
+        : 'You’ll focus on speed, routing, and a clean handoff to your team.';
+    });
+
+    const openedFromCommunity = new URLSearchParams(window.location.search).get('from') === 'community';
+    if(openedFromCommunity){
+      $('#community-heading').textContent = 'Know someone who should be building this?';
+      $('#community-line-one').textContent = 'Forward the blueprint to an operator who can use it.';
+      $('#community-line-two').hidden = true;
+      const communityAction = $('#community-action');
+      const shareText = 'Free blueprint: the missed-call text-back system\nhttps://blueprint.nobsai.com';
+      communityAction.textContent = 'Share on WhatsApp';
+      communityAction.href = 'https://wa.me/?text=' + encodeURIComponent(shareText);
+      communityAction.setAttribute('aria-label', 'Share this blueprint on WhatsApp');
+    }
+
+    const templates = {
+      general: {
+        first: "Hi—this is [Business]. Sorry we missed your call. This is an automated reply so you don't have to wait on hold. What can we help you with? Reply STOP to opt out.",
+        reply: "Thanks—got it. What's the best time for our team to call you back today?",
+        after: "Hi—this is [Business]. We missed your call and we're currently closed. This is an automated reply. Tell us what you need and our team will follow up during business hours. Reply STOP to opt out."
+      },
+      plumber: {
+        first: "Hi—this is [Plumbing Company]. Sorry we missed your call. This is an automated reply. Is this about a leak, a clog, or something else? Reply STOP to opt out.",
+        reply: "Thanks. Is water actively leaking right now, and what ZIP code is the property in? Our team will review and follow up.",
+        after: "Hi—this is [Plumbing Company]. We're currently closed, but we've got your missed call. This is an automated reply. Tell us what happened and your ZIP code. If there is immediate danger, contact local emergency services. Reply STOP to opt out."
+      },
+      hvac: {
+        first: "Hi—this is [HVAC Company]. Sorry we missed your call. This is an automated reply. Is your system not cooling, not heating, or making an unusual noise? Reply STOP to opt out.",
+        reply: "Thanks. What ZIP code are you in, and is the system running at all? Our team will follow up with the next available step.",
+        after: "Hi—this is [HVAC Company]. We're closed right now, but we've got your missed call. This is an automated reply. Tell us what's happening and your ZIP code; we'll reply during business hours. Reply STOP to opt out."
+      },
+      dental: {
+        first: "Hi—this is [Dental Office]. Sorry we missed your call. This is an automated reply. Are you looking to schedule, change an appointment, or ask a general question? Please don't send private medical details by text. Reply STOP to opt out.",
+        reply: "Thanks. What day and time usually work best for a call from our team? Please don't send medical details by text.",
+        after: "Hi—this is [Dental Office]. We're currently closed, but we've got your missed call. This is an automated reply. Tell us whether you need scheduling help or a callback. For a medical emergency, contact emergency services. Reply STOP to opt out."
+      },
+      auto: {
+        first: "Hi—this is [Auto Shop]. Sorry we missed your call. This is an automated reply. Are you calling about a repair, maintenance, or an estimate? Reply STOP to opt out.",
+        reply: "Thanks. What's the vehicle year, make, and model—and when would you like our team to call you back?",
+        after: "Hi—this is [Auto Shop]. We're closed right now, but we've got your missed call. This is an automated reply. Send the vehicle year, make, model, and what you noticed; we'll follow up during business hours. Reply STOP to opt out."
+      }
+    };
+    const stageNames = {first:'Immediate text-back',reply:'Reply prompt',after:'After-hours text'};
+    function updateMessage(){
+      const text = templates[$('#trade').value][$('#stage').value];
+      $('#messageText').textContent = text;
+      $('#messageMeta').textContent = stageNames[$('#stage').value] + ' · edit bracketed fields before launch';
+    }
+    $('#trade').addEventListener('change', updateMessage);
+    $('#stage').addEventListener('change', updateMessage);
+    updateMessage();
+
+    const toast = $('#toast');
+    function showToast(message='Copied'){
+      toast.textContent=message; toast.classList.add('show');
+      clearTimeout(window.toastTimer); window.toastTimer=setTimeout(()=>toast.classList.remove('show'),1800);
+    }
+    async function copyText(text){
+      try{ await navigator.clipboard.writeText(text); showToast(); }
+      catch(e){
+        const ta=document.createElement('textarea'); ta.value=text; ta.style.position='fixed'; ta.style.opacity='0'; document.body.appendChild(ta); ta.select(); document.execCommand('copy'); ta.remove(); showToast();
+      }
+    }
+    $('#copyMessage').addEventListener('click',()=>copyText($('#messageText').textContent));
+    document.querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',()=>copyText(document.getElementById(btn.dataset.copy).innerText)));
+
+    const calcInputs=['missed','job','recover'];
+    function updateCalc(){
+      const missed=+$('#missed').value, job=+$('#job').value, recover=+$('#recover').value;
+      $('#missedVal').textContent=missed;
+      $('#jobVal').textContent='$'+job.toLocaleString();
+      $('#recoverVal').textContent=recover+'%';
+      $('#resultNumber').textContent='$'+Math.round(missed*(recover/100)*job*4.33).toLocaleString();
+    }
+    calcInputs.forEach(id=>$('#'+id).addEventListener('input',updateCalc)); updateCalc();
+
+    $('#downloadBrief').addEventListener('click',()=>{
+      const brief = `MISSED-CALL TEXT-BACK BUILD BRIEF\n\nGOAL\nAcknowledge a missed caller, learn what they need, and route the conversation to the right next step.\n\nFLOW\n1. Missed/no-answer call event\n2. Validate caller number and apply blocklist/deduplication rules\n3. Send approved SMS from the business number\n4. Create or update the lead\n5. Route the reply and notify a person\n\nREQUIRED CONFIG\n- Business name:\n- Phone line:\n- Messaging number:\n- Business hours/timezone:\n- Reply destination:\n- Calendar or CRM destination:\n- Escalation owner:\n- Approved immediate message:\n- Approved after-hours message:\n\nACCEPTANCE TESTS\n1. Normal missed call\n2. Duplicate event\n3. Known customer\n4. After-hours call\n5. Opt-out\n6. Provider failure\n\nCURRENT STARTER MESSAGE\n${$('#messageText').textContent}\n\nSTARTER OFFER SCOPE\n- Connect one phone line\n- Approve three messages\n- Route replies to one inbox\n- Create/update CRM leads\n- Run six tests\n- Train the team\n- Define monitoring and support window\n\nGUARDRAILS\nIdentify the business; honor opt-outs; register the sender; protect sensitive data; set honest timing; keep a human handoff.\n\nNote: Validate messaging, consent, registration, and industry requirements for the business and region before launch.`;
+      const blob=new Blob([brief],{type:'text/plain'});
+      const url=URL.createObjectURL(blob);
+      const a=document.createElement('a'); a.href=url; a.download='missed-call-text-back-build-brief.txt'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); showToast('Brief downloaded');
+    });
+  </script>
 </body>
 </html>
