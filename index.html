@@ -414,13 +414,41 @@ routeReply(intent, urgency, requestedService)</pre>
         : 'You’ll focus on speed, routing, and a clean handoff to your team.';
     });
 
-    const openedFromCommunity = new URLSearchParams(window.location.search).get('from') === 'community';
+    // Share attribution: ?ref=NB-XXXXXX identifies the carrier who shared this page.
+    const nbParams = new URLSearchParams(window.location.search);
+    let nbRef = nbParams.get('ref');
+    try{
+      if(nbRef && /^[A-Za-z0-9-]{1,24}$/.test(nbRef)){ localStorage.setItem('nb_ref', nbRef); }
+      else{ nbRef = localStorage.getItem('nb_ref'); }
+    }catch(e){}
+    const nbShareRef = (nbRef && /^[A-Za-z0-9-]{1,24}$/.test(nbRef)) ? nbRef : 'NB-SHARE';
+    const nbShareUrl = 'https://blueprint.nobsai.com?ref=' + nbShareRef;
+    // Carry the ref onto the community join link (harmless; used for join attribution later).
+    try{
+      if(nbRef){
+        const joinLink = document.getElementById('community-action');
+        if(joinLink && joinLink.getAttribute('href') === 'https://chat.nobsai.com'){
+          joinLink.setAttribute('href','https://chat.nobsai.com?ref='+encodeURIComponent(nbRef));
+        }
+      }
+    }catch(e){}
+    // Ping the share ledger once per visit. Silent no-op until the n8n workflow is active again.
+    try{
+      if(nbRef && !sessionStorage.getItem('nb_ping')){
+        sessionStorage.setItem('nb_ping','1');
+        const pingUrl='https://joingps.app.n8n.cloud/webhook/nb-blueprint-ref?ref='+encodeURIComponent(nbRef)+'&page='+encodeURIComponent(window.location.pathname);
+        if(navigator.sendBeacon){ navigator.sendBeacon(pingUrl); }
+        else{ fetch(pingUrl,{method:'POST',mode:'no-cors',keepalive:true}).catch(()=>{}); }
+      }
+    }catch(e){}
+
+    const openedFromCommunity = nbParams.get('from') === 'community';
     if(openedFromCommunity){
       $('#community-heading').textContent = 'Pass this to someone who needs it';
       $('#community-line-one').textContent = 'Share it with a friend. Share it with a business owner. Share it with someone who could be your client.';
       $('#community-line-two').hidden = true;
       const communityAction = $('#community-action');
-      const shareText = 'Free blueprint: the missed-call text-back system\nhttps://blueprint.nobsai.com';
+      const shareText = 'Free blueprint: the missed-call text-back system\n' + nbShareUrl;
       communityAction.textContent = 'Share on WhatsApp';
       communityAction.href = 'https://wa.me/?text=' + encodeURIComponent(shareText);
       communityAction.setAttribute('aria-label', 'Share this blueprint on WhatsApp');
@@ -494,7 +522,7 @@ routeReply(intent, urgency, requestedService)</pre>
     calcInputs.forEach(id=>$('#'+id).addEventListener('input',updateCalc)); updateCalc();
 
     $('#downloadBrief').addEventListener('click',()=>{
-      const brief = `MISSED-CALL TEXT-BACK BUILD BRIEF\n\nGOAL\nAcknowledge a missed caller, learn what they need, and route the conversation to the right next step.\n\nFLOW\n1. Missed/no-answer call event\n2. Validate caller number and apply blocklist/deduplication rules\n3. Send approved SMS from the business number\n4. Create or update the lead\n5. Route the reply and notify a person\n\nREQUIRED CONFIG\n- Business name:\n- Phone line:\n- Messaging number:\n- Business hours/timezone:\n- Reply destination:\n- Calendar or CRM destination:\n- Escalation owner:\n- Approved immediate message:\n- Approved after-hours message:\n\nACCEPTANCE TESTS\n1. Normal missed call\n2. Duplicate event\n3. Known customer\n4. After-hours call\n5. Opt-out\n6. Provider failure\n\nCURRENT STARTER MESSAGE\n${$('#messageText').textContent}\n\nSTARTER OFFER SCOPE\n- Connect one phone line\n- Approve three messages\n- Route replies to one inbox\n- Create/update CRM leads\n- Run six tests\n- Train the team\n- Define monitoring and support window\n\nGUARDRAILS\nIdentify the business; honor opt-outs; register the sender; protect sensitive data; set honest timing; keep a human handoff.\n\nNote: Validate messaging, consent, registration, and industry requirements for the business and region before launch.`;
+      const brief = `MISSED-CALL TEXT-BACK BUILD BRIEF\n\nGOAL\nAcknowledge a missed caller, learn what they need, and route the conversation to the right next step.\n\nFLOW\n1. Missed/no-answer call event\n2. Validate caller number and apply blocklist/deduplication rules\n3. Send approved SMS from the business number\n4. Create or update the lead\n5. Route the reply and notify a person\n\nREQUIRED CONFIG\n- Business name:\n- Phone line:\n- Messaging number:\n- Business hours/timezone:\n- Reply destination:\n- Calendar or CRM destination:\n- Escalation owner:\n- Approved immediate message:\n- Approved after-hours message:\n\nACCEPTANCE TESTS\n1. Normal missed call\n2. Duplicate event\n3. Known customer\n4. After-hours call\n5. Opt-out\n6. Provider failure\n\nCURRENT STARTER MESSAGE\n${$('#messageText').textContent}\n\nSTARTER OFFER SCOPE\n- Connect one phone line\n- Approve three messages\n- Route replies to one inbox\n- Create/update CRM leads\n- Run six tests\n- Train the team\n- Define monitoring and support window\n\nGUARDRAILS\nIdentify the business; honor opt-outs; register the sender; protect sensitive data; set honest timing; keep a human handoff.\n\nNote: Validate messaging, consent, registration, and industry requirements for the business and region before launch.\n\nSHARED VIA\n${nbShareUrl}\nGet the interactive version, with the reply calculator and message starter, free at the link above.`;
       const blob=new Blob([brief],{type:'text/plain'});
       const url=URL.createObjectURL(blob);
       const a=document.createElement('a'); a.href=url; a.download='missed-call-text-back-build-brief.txt'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url); showToast('Brief downloaded');
