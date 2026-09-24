@@ -140,6 +140,22 @@
     document.getElementById("streak-word").textContent = "day streak";
     document.getElementById("total-num").textContent = info.total;
 
+    // 7-mission milestone: the player has done a full week of fixes.
+    // Soft, story-led path to the $497 audit. Shows once earned, stays.
+    var auditNudge = document.getElementById("audit-nudge");
+    if (auditNudge) {
+      if (info.total >= 7) {
+        auditNudge.hidden = false;
+        auditNudge.innerHTML = '<div class="audit-title">Seven missions done. You have earned the map.</div>' +
+          '<p>All week you have been fixing real leaks in your own business, five minutes at a time, for free. ' +
+          'If you want the full map of where AI pays in YOUR business, not just the daily missions, that is exactly what my AI Opportunity Audit does. ' +
+          'One call, a one-page plan in 48 hours. $497, and it comes off the build if we build it together.</p>' +
+          '<a class="audit-btn" href="https://audit.nobsai.com">See what the audit does</a>';
+      } else {
+        auditNudge.hidden = true;
+      }
+    }
+
     var lvl = levelFor(info.total);
     var badge = document.getElementById("level-badge");
     if (badge) {
