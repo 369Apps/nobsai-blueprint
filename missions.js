@@ -11,90 +11,90 @@
    Never call readers "agents" in copy. */
 
 const MISSION_WEEKS = {
-"2026-09-28": [
+"2026-10-05": [
   {
-    title: "A voicemail that turns callers into texters",
-    tagline: "Every missed call is a customer. Make yours text you instead.",
+    title: "The deposit text that ends no-shows",
+    tagline: "Chasing customers who ghost is free labor. Get paid before you start.",
     time: "5 min",
     steps: [
-      "Call your own business number from another phone so you hear exactly what callers hear.",
-      "Record a new greeting: Hi, you reached [business]. I miss calls when I am with customers. Text me at this number and I will reply today.",
-      "Say the fastest way to reach you in the greeting itself. Callers who hear it text instead of hanging up."
+      "Open the payment app you use (Stripe, Square, PayPal, whatever) and make a payment link for your deposit amount.",
+      "Notes app, new note titled Deposit ask. Write: To lock your date, the deposit is $[X], pay here: [your link]. The balance is due when the job is done.",
+      "New rule starting today: no name goes on the calendar until the deposit lands. Say it exactly like that."
     ],
-    win: "A customer who texts you after the voicemail instead of hanging up and calling your competitor.",
-    post: "*5-minute mission, Monday.*\n\nYou are with a customer, the phone rings, and that caller becomes your competitor's customer.\n\nThe fix: a voicemail that turns callers into texters.\n\nCall your own business number and listen to what callers hear. Then record a new greeting: \"Hi, you reached [business]. I miss calls when I am with customers. Text me at this number and I will reply today.\"\n\nSay the fastest way to reach you in the greeting itself. Callers who hear it text you instead of hanging up.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSet it up today, message me directly how it goes."
+    win: "The first customer who pays the deposit before you lift a finger, and actually shows up.",
+    post: "*5-minute mission, Monday.*\n\nYou drive across town and the customer is not home. You waited, they ghosted, you worked for free.\n\nThe fix: a deposit before the date.\n\nMake a payment link for your deposit amount in whatever app you take payments with. Then save a note titled \"Deposit ask\": \"To lock your date, the deposit is $[X], pay here: [link]. The balance is due when the job is done.\"\n\nNew rule: no name goes on the calendar until the deposit lands. The customers who pay show up. The ones who were going to ghost, ghost now, before they cost you a trip.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nWrite the note today, message me directly how it goes."
   },
   {
-    title: "One link that ends 'where are you located?'",
-    tagline: "Stop typing directions. One link puts your shop on their map.",
+    title: "Job photos that sell your next job",
+    tagline: "Your best work disappears the day you finish it. Keep it selling for you.",
     time: "5 min",
     steps: [
-      "Open Google Maps on your phone, find your shop, tap Share, copy the link.",
-      "Save the link in a pinned Notes note titled Shop directions.",
-      "Anyone who asks where you are gets the link. They get directions, your hours, and your reviews in one tap."
+      "Google Photos on your phone. New album, name it Our Work.",
+      "New rule: every job gets two photos, one before and one after. Drop both in the album before you leave the site.",
+      "Put the album link in your quote note. Now every quote carries proof, not promises."
     ],
-    win: "A customer who walks in and says your link took them right here.",
-    post: "*5-minute mission, Tuesday.*\n\nWhere are you located? You type the same directions over and over, and some people still get lost.\n\nThe fix: one saved link.\n\nGoogle Maps, find your shop, Share, copy the link. Pin it in a Notes note titled \"Shop directions\".\n\nAnyone who asks gets the link. Directions, hours, and your reviews open in one tap. Nobody gets lost again.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSave the link today, message me directly how it goes."
+    win: "A customer who says I saw your work in the photos, when can you come?",
+    post: "*5-minute mission, Tuesday.*\n\nYour best work vanishes the day you finish the job. The next customer cannot see it, so you sell on promises.\n\nThe fix: a photo habit and one album.\n\nGoogle Photos, new album named \"Our Work\". New rule: every job gets a before photo and an after photo, dropped in the album before you leave.\n\nThen put the album link in your quote note. Every quote now carries proof. Customers buy what they can see.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nMake the album today, message me directly how it goes."
   },
   {
-    title: "See who is calling before you answer",
-    tagline: "Spam and customers sound the same on a ringing phone. Now they don't.",
+    title: "The birthday text machine",
+    tagline: "One birthday text a month buys more loyalty than any ad.",
     time: "5 min",
     steps: [
-      "iPhone: Settings, Apps, Phone, Live Voicemail, turn it on. Pixel: Phone app, Settings, Call Screen, turn it on.",
-      "When a strange number calls, let it go to the screen. You read what they say while they say it.",
-      "Real customer? Pick up mid-call. Spam? Swipe it away without ever hearing their voice."
+      "Open your Contacts and pick your 10 best customers.",
+      "Add the birthday field to each one. Ask them next visit, or check their Facebook page.",
+      "When the phone reminds you, send: Happy birthday from all of us at [business]. Hope it is a good one. That is the whole machine."
     ],
-    win: "The first spam call you dodge while a real customer gets answered.",
-    post: "*5-minute mission, Wednesday.*\n\nSpam and customers sound the same on a ringing phone. You either answer everything or dodge everything.\n\nThe fix: your phone screens the call for you.\n\nOn iPhone go to Settings, Apps, Phone, Live Voicemail and turn it on. On a Pixel open the Phone app, Settings, Call Screen, turn it on.\n\nWhen a strange number calls, let it go to the screen. You read what they say while they say it. Customer, you pick up mid-call. Spam, you swipe it away.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nTurn it on today, message me directly how it goes."
+    win: "A quiet customer who books again because you remembered their birthday.",
+    post: "*5-minute mission, Wednesday.*\n\nLoyalty is not a punch card. It is being remembered.\n\nThe fix: your phone already knows the dates, you just never gave it the birthdays.\n\nOpen Contacts, pick your 10 best customers, add the birthday field to each. Ask them next visit or check their Facebook page.\n\nWhen the reminder pops, send: \"Happy birthday from all of us at [business]. Hope it is a good one.\" One text a month, and you are the business that remembers.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nAdd the birthdays today, message me directly how it goes."
   },
   {
-    title: "Receipts that file themselves",
-    tagline: "Paper receipts die in your pocket. Photos live in one folder forever.",
+    title: "Label every chat so nobody slips",
+    tagline: "Money hides in forgotten chats. Labels drag it into the light.",
     time: "5 min",
     steps: [
-      "Google Drive on your phone. New folder, name it Receipts 2026.",
-      "New rule: every business receipt gets a photo the second you pay. Drop it in the folder before you leave the store.",
-      "At tax time, one folder, every receipt, done. Share the folder with your spouse or bookkeeper once."
+      "WhatsApp Business: open any chat, tap the name, Labels, and make four: New lead, Quote sent, Waiting on money, Job done.",
+      "Go through your last 20 chats and label each one. Ten minutes of tapping, once.",
+      "Friday night: tap the Waiting on money label. Follow up every name there. That label is now your money list."
     ],
-    win: "Tax time with zero shoeboxes and zero digging through pockets.",
-    post: "*5-minute mission, Thursday.*\n\nPaper receipts die in your pockets, your truck, your wallet. Come tax time you find half of them.\n\nThe fix: a photo habit and one folder.\n\nGoogle Drive, new folder named \"Receipts 2026\". New rule: every business receipt gets a photo the second you pay, dropped in the folder before you leave the store.\n\nAt tax time, one folder, every receipt, done. Share it with your spouse or bookkeeper once and they can pull what they need.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nMake the folder today, message me directly how it goes."
+    win: "A payment you had forgotten about, caught by a label and collected the same night.",
+    post: "*5-minute mission, Thursday.*\n\nYour money is hiding in chats you forgot to answer. Quotes you sent, payments you never chased.\n\nThe fix: four labels.\n\nWhatsApp Business, open a chat, tap the name, Labels, make four: \"New lead\", \"Quote sent\", \"Waiting on money\", \"Job done\". Label your last 20 chats.\n\nFriday night, tap \"Waiting on money\" and follow up every name there. That label is your money list now.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nMake the labels today, message me directly how it goes."
   },
   {
-    title: "The Friday invoice nudge",
-    tagline: "Unpaid invoices do not pay themselves. One saved note changes that.",
+    title: "Raise one price tonight",
+    tagline: "Your costs went up this year. Your prices should too.",
     time: "5 min",
     steps: [
-      "Notes app. New note, title it Late payment nudge. Write: Hi [name], checking in on invoice [number] for [amount]. Can you pay this week?",
-      "Set a phone reminder for every Friday at 4pm that says: Send payment nudges.",
-      "Friday comes: paste the note to everyone over 14 days late. Two minutes, money back in the door."
+      "Pick the service you sell the most. That is the one.",
+      "Raise it by a step you can say with a straight face. Five dollars on a small job, ten percent on a big one.",
+      "Update it in three places: your quote template note, your WhatsApp catalog, your Google Business Profile. Same night, done."
     ],
-    win: "A payment that lands Friday night from a note you almost forgot to send.",
-    post: "*5-minute mission, Friday.*\n\nUnpaid invoices sit there quietly. The longer you wait, the longer they wait.\n\nThe fix: a Friday nudge you cannot forget.\n\nNotes app, new note titled \"Late payment nudge\". Write: \"Hi [name], checking in on invoice [number] for [amount]. Can you pay this week?\"\n\nSet a phone reminder every Friday at 4pm: Send payment nudges. When it fires, paste the note to everyone over 14 days late. Two minutes, money back in the door.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nWrite the note today, message me directly how it goes."
+    win: "Your first week at the new price: same customers, more money in the door.",
+    post: "*5-minute mission, Friday.*\n\nEverything you buy costs more than it did last year. Your prices are the one bill you control, and you have not touched them.\n\nThe fix: raise one price tonight.\n\nPick the service you sell the most. Raise it by a step you can say with a straight face: five dollars on a small job, ten percent on a big one.\n\nThen update it in three places: your quote template, your WhatsApp catalog, your Google Business Profile. Same night, done. Same work, more money.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nRaise it tonight, message me directly how it goes."
   },
   {
-    title: "Back up your customer list tonight",
-    tagline: "Your customers live in your phone. Phones die. Back up the list.",
+    title: "Set your holiday hours before customers guess wrong",
+    tagline: "November is coming. Your Google page should already know your holidays.",
     time: "5 min",
     steps: [
-      "On your phone browser go to contacts.google.com and sign in.",
-      "Export your contacts and save the file in Google Drive, in a folder named Business backups.",
-      "Your list now survives a lost, broken, or stolen phone. Set a phone reminder to redo it on the first of every month."
+      "Open your Google Business Profile app. Go to Hours, then Special hours.",
+      "Add Thanksgiving, Christmas Eve, Christmas Day, and New Year's Day now, while you are thinking about it.",
+      "Add one line to your voicemail greeting: Holiday hours are on our Google page. Customers check before they drive."
     ],
-    win: "Peace of mind: if your phone dies tomorrow, your customers are safe.",
-    post: "*5-minute mission, Saturday.*\n\nYour whole customer list lives in your phone. One drop, one lost phone, and years of relationships are gone.\n\nThe fix: a 5-minute backup.\n\nPhone browser, contacts.google.com, sign in. Export your contacts and save the file in Google Drive, folder named \"Business backups\".\n\nYour list now survives a lost, broken, or stolen phone. Set a reminder to redo it on the first of every month.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nBack it up tonight, message me directly how it goes."
+    win: "A holiday season with zero customers showing up to a locked door.",
+    post: "*5-minute mission, Saturday.*\n\nEvery holiday season, customers drive to a closed shop because your hours online said nothing.\n\nThe fix: set the holidays now, in October, while you are thinking about it.\n\nGoogle Business Profile, Hours, Special hours. Add Thanksgiving, Christmas Eve, Christmas Day, New Year's Day.\n\nThen add one line to your voicemail greeting: \"Holiday hours are on our Google page.\" Customers check before they drive, and nobody shows up to a locked door.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSet the hours today, message me directly how it goes."
   },
   {
-    title: "The Sunday money check",
-    tagline: "The weekly boss mission. Check the week's systems and collect what they caught.",
+    title: "The Sunday close-out",
+    tagline: "The weekly boss mission. Close the week, collect the money, start clean.",
     time: "5 min",
     steps: [
-      "Call your business number and listen to your voicemail. Fix one word if it does not sound right anymore.",
-      "Open your Receipts 2026 folder. Every receipt from this week in there? Snap the missing ones now.",
-      "Check unpaid invoices. Send Friday's nudge to anyone you skipped. Then confirm every charge in your bank alerts this week was yours."
+      "Check this week's bookings. Any name on the calendar with no deposit? Text them the deposit ask tonight.",
+      "Open your Our Work album. Any job this week missing its before and after? Add the photos now.",
+      "Tap your Waiting on money label. Any name still there gets the nudge tonight. Then glance at next week: any customer birthdays coming up? Write the text now."
     ],
-    win: "A Sunday where your systems checked out, your money is accounted for, and Monday starts clean.",
-    post: "*5-minute mission, Sunday. Boss level.*\n\nThis week you set up 6 money systems. Tonight, check they are working and collect what they caught.\n\nThe check: call your business number and listen to your voicemail, fix one word if it sounds off. Open your Receipts 2026 folder and snap any missing receipts. Send Friday's invoice nudge to anyone you skipped. Then scan your bank alerts and confirm every charge this week was yours.\n\nFive minutes. Systems checked, money collected, Monday starts clean.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nRun the check tonight, message me directly what it found."
+    win: "A Sunday where every job is paid, every photo is filed, and Monday starts with money already moving.",
+    post: "*5-minute mission, Sunday. Boss level.*\n\nThis week you built 6 money systems. Tonight, close the week and collect what they caught.\n\nThe close-out: any booking with no deposit gets the deposit text tonight. Open your Our Work album and add any photos missing from this week's jobs. Tap your Waiting on money label and nudge every name still there. Then glance at next week: any customer birthdays? Write the text tonight.\n\nFive minutes. Every job paid, every photo filed, Monday starts with money already moving.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nRun the close-out tonight, message me directly what it found."
   }
 ]
 };
