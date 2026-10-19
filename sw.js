@@ -1,5 +1,5 @@
 /* No BS AI Daily - offline cache, v1 (form POSTs bypass the worker) */
-var CACHE = "nbsai-daily-20261012";
+var CACHE = "nbsai-daily-20261019";
 var FILES = [
   "./",
   "./index.html",
