@@ -11,90 +11,90 @@
    Never call readers "agents" in copy. */
 
 const MISSION_WEEKS = {
-"2026-10-19": [
+"2026-10-26": [
   {
-    "title": "One form that asks all your intake questions",
-    "tagline": "Name, phone, address, what they need. You ask the same four things every time. Let a form ask them.",
+    "title": "A QR code that opens your booking page",
+    "tagline": "People will not type a long link. They will point a phone at a square and tap once.",
     "time": "5 min",
     "steps": [
-      "Open Google Forms and start a blank form. Title it New job request. Add four short fields: name, phone, address, and what do you need done.",
-      "Tap Send, copy the link, and save it in a note titled Intake link. Pin that note so you can find it in two taps.",
-      "Next time someone asks for work, send the link instead of trading ten texts. Their answers land in one place, in order."
+      "Open your booking link or your intake form link in the Chrome app on your phone. Tap Share, then tap the QR code option.",
+      "Save the QR picture to your photos. Print one copy for the truck, the counter, or the job site, and keep the picture on your phone to text to people.",
+      "Test it before you use it. Point your camera at the printed copy and make sure the right page opens."
     ],
-    "win": "The first new job that shows up with name, phone, address, and the job already written down.",
-    "post": "*5-minute mission, Monday.*\n\nEvery new job starts the same way. What is your address. What is your phone. What do you need done. You type those questions ten times a week, then dig through texts to find the answers.\n\nThe fix: one short form asks for you.\n\nOpen Google Forms, start a blank form titled \"New job request\". Add four fields: name, phone, address, and what they need done. Tap Send, copy the link, and save it in a pinned note titled \"Intake link\".\n\nNext inquiry, send the link. Their answers land in one place, in order, no digging.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nBuild the form today, message me directly how it goes."
+    "win": "The first customer who scans the square and lands on your page without you typing or spelling a link.",
+    "post": "*5-minute mission, Monday.*\n\nYou tell a customer to book online. Then you spell a long link out loud, they type it wrong, and the job just fades away.\n\nThe fix: a QR code does the typing for them.\n\nOpen your booking link or intake form link in Chrome on your phone. Tap Share, then tap the QR code option. Save the picture, print one copy for the truck or the counter, and keep one on your phone to text to people. Test it with your own camera first and make sure the right page opens.\n\nNow a customer points, taps, and books. No spelling, no wrong link.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nMake your QR code today, message me directly how it goes."
   },
   {
-    "title": "Tomorrow's jobs line themselves up",
-    "tagline": "Your day is scattered across texts. Put it in the calendar tonight and the phone walks you through it.",
+    "title": "Every email you send carries your booking link",
+    "tagline": "You send emails all day. Right now they end with just your name. They could end with a way to book you.",
     "time": "5 min",
     "steps": [
-      "Open your calendar tonight and add each of tomorrow's jobs as an event with a start time.",
-      "Put the address in the location field so one tap opens the map. Put the customer's phone in the notes so one tap calls them.",
-      "Set an alert for 30 minutes before each job. Tomorrow your phone tells you when to leave, where to go, and who to call."
+      "Open the Gmail app. Tap the menu, tap Settings, pick your account, then open the signature setting and turn it on.",
+      "Write three short lines: your name and business name, your phone number, and one line that says Book here with your booking or intake link pasted under it.",
+      "Send one test email to yourself. Check that the link opens the right page and the phone number is easy to tap."
     ],
-    "win": "A morning where you follow taps on your phone instead of digging through texts to find the next address.",
-    "post": "*5-minute mission, Tuesday.*\n\nYour day is scattered. One job is in a text, one is in an email, one is in your head. Then you are late because the address was buried three screens down.\n\nThe fix: line tomorrow up tonight.\n\nOpen your calendar and add each job as an event with a start time. Put the address in the location field, so one tap opens the map. Put the customer's phone in the notes, so one tap calls them. Set an alert for 30 minutes before each job.\n\nTomorrow, your phone tells you when to leave, where to go, and who to call. You just follow the taps.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nLine up tomorrow tonight, message me directly how it goes."
+    "win": "The first booking that comes from an email you would have sent anyway, with no extra work.",
+    "post": "*5-minute mission, Tuesday.*\n\nEvery email you send ends the same way, with just your name. The person reading it has to hunt for your number and has no easy way to book you.\n\nThe fix: let every email carry the link for you.\n\nOpen the Gmail app. Menu, Settings, pick your account, then open the signature setting and turn it on. Write three short lines: your name and business name, your phone number, and a line that says \"Book here\" with your booking or intake link under it.\n\nSend a test email to yourself and tap the link to check it. From now on, every reply you send is also a way to hire you.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nAdd your signature today, message me directly how it goes."
   },
   {
-    "title": "Talk your job notes, skip the typing",
-    "tagline": "You will not type notes after a long day. You will talk for 20 seconds in the truck.",
+    "title": "One tap starts your whole work morning",
+    "tagline": "Calendar, weather, first job address. You open three apps in a fog. One button can open them in order.",
     "time": "5 min",
     "steps": [
-      "After your next job, open your Notes app, start a new note, and tap the mic or dictate button.",
-      "Say it plain: customer name, what you did, what is left to do, and what you charged. The phone types it for you.",
-      "Title the note with the customer name and the date. Months from now, search the name and the whole job comes back."
+      "iPhone: open the Shortcuts app and tap the plus to make a new shortcut named Start my day. Android: open Google Assistant settings and start a new routine with the same name.",
+      "Add three things in this order: show today's calendar, show the weather where you are, and open the address of your first job in Maps.",
+      "Put the shortcut or routine on your home screen. Tomorrow, tap it once with your coffee and let the phone line up your morning."
     ],
-    "win": "The first time a customer calls back and you pull up the whole job by searching their name.",
-    "post": "*5-minute mission, Wednesday.*\n\nJob notes do not happen because typing after a long day does not happen. So the details live in your head, and your head is busy.\n\nThe fix: talk the note in the truck.\n\nAfter the job, open your Notes app, start a new note, and tap the mic. Say it plain: customer name, what you did, what is left, what you charged. The phone types it for you. Title the note with their name and the date.\n\nWhen they call back months later, search the name. The whole job is there.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nTalk one note today, message me directly how it goes."
+    "win": "A morning where one tap shows your jobs, the weather, and the drive to the first job.",
+    "post": "*5-minute mission, Wednesday.*\n\nYour morning starts with digging. Calendar in one app, weather in another, the first address buried in a text. Half awake, three apps, things get missed.\n\nThe fix: one tap runs the whole start for you.\n\nOn iPhone, open Shortcuts, tap the plus, and make one named \"Start my day\". On Android, make a Google Assistant routine with the same name. Add three things in order: today's calendar, the weather where you are, and the first job address in Maps. Put it on your home screen.\n\nTomorrow, one tap with your coffee. Jobs, weather, and the drive, all lined up.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nBuild your one tap start today, message me directly how it goes."
   },
   {
-    "title": "Your inbox files the money mail itself",
-    "tagline": "Invoices and bills hide under junk mail. One filter pulls them out before they land.",
+    "title": "One saved link gets you paid",
+    "tagline": "The job is done and the payment talk gets slow. A link you can send in two taps ends that talk fast.",
     "time": "5 min",
     "steps": [
-      "Open Gmail in your browser, tap the gear, then See all settings, then Filters and blocked addresses, then Create a new filter.",
-      "In the subject field, type invoice OR bill OR payment due. Set the filter to star it and apply a label called Money.",
-      "Send yourself a test email with the word invoice in the subject. If it lands starred under Money, the filter works."
+      "Open the app you already use to get paid, like Square, Stripe, PayPal, Venmo, or Cash App. Find your pay me link, payment link, or your pay tag in the settings or receive section.",
+      "Copy the link and save it in a pinned note titled Pay me link. Add the exact amount line you will send with it, like: Here is the link for today's job.",
+      "Test the link by opening it yourself. Make sure it shows your business name and lets a customer pay without making an account first if the app allows it."
     ],
-    "win": "The first invoice that files itself under Money instead of getting buried under junk mail.",
-    "post": "*5-minute mission, Thursday.*\n\nAn invoice lands, then 40 junk emails land on top of it. By the time you find it, it is late and there is a fee.\n\nThe fix: your inbox files money mail by itself.\n\nOpen Gmail in your browser. Gear, See all settings, Filters, Create a new filter. In the subject field type \"invoice OR bill OR payment due\". Set it to star the mail and apply a label called Money.\n\nTest it: send yourself an email with invoice in the subject. If it lands starred under Money, you are done. From now on, money mail sorts itself.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSet the filter today, message me directly how it goes."
+    "win": "The first job where you send one link at the door and the pay notice lands before you leave.",
+    "post": "*5-minute mission, Thursday.*\n\nThe work is done. Then comes the slow part. Checks, cash runs, \"send me your details\", and you are still chasing pay days later.\n\nThe fix: one pay link, saved and ready before you need it.\n\nOpen the app you already use to get paid, like Square, Stripe, PayPal, Venmo, or Cash App. Find your pay me link or pay tag, copy it, and save it in a pinned note titled \"Pay me link\". Test it yourself and make sure it shows your business name.\n\nNext finished job, copy, paste, send, right at the door. The slow talk is over.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSave your pay link today, message me directly how it goes."
   },
   {
-    "title": "One tap to reorder from your top supplier",
-    "tagline": "You order the same stuff from the same person. Stop hunting old threads to write the same order.",
+    "title": "Schedule tomorrow's check-in while you are still on the job",
+    "tagline": "You mean to check in the next day. Then the next day eats you. Write it now, let the phone send it later.",
     "time": "5 min",
     "steps": [
-      "Open the contact for the supplier you order from most. In the notes field, type your usual order, item by item.",
-      "Start a note titled Reorder text. Write: Hi, same as last time please. Then paste your usual order under it, with your business name at the end.",
-      "Next order, copy the note, paste it in a text, send. No old threads, no typing it out again in a parking lot."
+      "Before you leave a finished job, open a text to that customer and write a short check-in: Hi, this is me from yesterday. All good with the work? Reply here if you need a thing.",
+      "iPhone: tap the plus in Messages and pick Send Later, then pick tomorrow at 9 in the morning. Android: in Messages, hold the send button and pick tomorrow morning.",
+      "Leave the job and forget about it. The text sends itself at the time you picked, while you are on the next job."
     ],
-    "win": "A reorder sent in under a minute, without digging through old texts.",
-    "post": "*5-minute mission, Friday.*\n\nYou run low, then you dig. Old texts, old emails, trying to remember what you ordered last time and how you worded it. Ten minutes gone for a two line order.\n\nThe fix: the order is written once, saved, and ready.\n\nOpen your top supplier's contact and type your usual order in the notes field. Then make a note titled \"Reorder text\": \"Hi, same as last time please\", your usual order under it, your business name at the end.\n\nNext time, copy, paste, send. Under a minute, from anywhere.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSave the reorder text today, message me directly how it goes."
+    "win": "The first reply to a check-in text you wrote yesterday and did not have to think about today.",
+    "post": "*5-minute mission, Friday.*\n\nYou finish a job and tell yourself you will check in tomorrow. Tomorrow brings three new jobs, and the check-in never happens. Small problems sit and grow.\n\nThe fix: write the check-in while you are still standing there, and let the phone send it.\n\nOpen a text to the customer before you leave. Write: \"Hi, this is me from yesterday. All good with the work? Reply here if you need a thing.\" On iPhone, tap the plus in Messages and pick Send Later for tomorrow at 9. On Android, hold the send button in Messages and pick tomorrow morning.\n\nYou forget it. The phone does not. The text lands on time, every time.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSchedule one check-in today, message me directly how it goes."
   },
   {
-    "title": "Your home screen is now your front desk",
-    "tagline": "Your phone opens to games and news. It should open to today, your notes, and your new jobs.",
+    "title": "One list the whole crew can update",
+    "tagline": "Supplies, fixes, small jobs. They reach you as ten texts from three people. One shared list holds them all.",
     "time": "5 min",
     "steps": [
-      "Long press your home screen and add a calendar widget at the top. Tomorrow's jobs now show before you open a thing.",
-      "Add three shortcuts next to it: your intake form replies, your job notes, and your Money label in Gmail. Most phones let you save a web page or an app screen as a home screen icon.",
-      "Move one social app off the first screen. Work gets the first screen now. Fun can live on screen two."
+      "Open Apple Reminders or Google Keep and make one list or note titled Crew list. Add the three things sitting in your head right now.",
+      "Tap Share and add your helper, partner, or crew. Anyone on the list can add a line or check one off when it is done.",
+      "Tell the crew one rule: if it is not on the list, it does not exist. From now on they add it there instead of texting you."
     ],
-    "win": "The first morning your phone opens straight to today's jobs, new requests, and money mail.",
-    "post": "*5-minute mission, Saturday.*\n\nYou pick up your phone to check today's jobs and land on news, videos, and everything but work. The work apps are there. They are just buried.\n\nThe fix: make the first screen your front desk.\n\nLong press the home screen and add a calendar widget at the top, so today's jobs show first. Add shortcuts for your intake form replies, your job notes, and your Money label in Gmail. Then move one social app to the second screen.\n\nNow the phone opens to work. One look, one tap, you are in.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSet up your front desk today, message me directly how it goes."
+    "win": "The first supply or small job that shows up on the list without a text, a call, or you holding it in your head.",
+    "post": "*5-minute mission, Saturday.*\n\nYour crew tells you things all day. We are out of tape. The back door sticks. Mrs Lee needs a call. Ten texts, three people, and you are the list.\n\nThe fix: one list everyone can touch.\n\nOpen Apple Reminders or Google Keep and make one list titled \"Crew list\". Add the three things in your head right now. Tap Share and add your helper, partner, or crew. They can add a line or check one off when it is done.\n\nOne rule: if it is not on the list, it does not exist. Now the list holds it, not your head.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nStart your crew list today, message me directly how it goes."
   },
   {
-    "title": "The Sunday reset",
-    "tagline": "The weekly boss mission. Five minutes tonight and Monday starts lined up instead of scrambled.",
+    "title": "The Sunday test run",
+    "tagline": "The weekly boss mission. Be your own customer for five minutes and find the one break before a real customer does.",
     "time": "5 min",
     "steps": [
-      "Requests and week: check the intake form for new replies, then put Monday's jobs in the calendar with addresses, phone numbers, and alerts set.",
-      "Notes and money: read this week's voice notes and turn anything left undone into a Monday task. Open the Money label and act on any invoice or bill sitting there.",
-      "Stock and screen: if anything is running low, send the saved reorder text now. Glance at your home screen and make sure the calendar, notes, and Money shortcuts still open the right thing."
+      "Scan and tap: point your camera at your QR code and open your booking page. Read one email you sent and tap your own signature link and phone number.",
+      "Pay and morning: open your saved pay link and check the name on it is yours. Run your Start my day shortcut or routine and check the calendar and weather come up right.",
+      "People check: look for any check-in texts you scheduled this week and read the replies. Open the crew list, clear what is done, and move what is left to Monday."
     ],
-    "win": "A Monday that starts with jobs lined up, bills seen, and supplies on the way.",
-    "post": "*5-minute mission, Sunday. Boss level.*\n\nThis week you built a form that takes requests, a calendar that walks you through the day, voice notes, an inbox that files money mail, a one tap reorder, and a home screen that works as a front desk. Tonight, run it all once.\n\nThe reset: check the intake form for new replies. Put Monday's jobs in the calendar with addresses and alerts. Read this week's voice notes and turn what is left into Monday tasks. Open the Money label and act on anything sitting there. Low on anything, send the saved reorder text now.\n\nFive minutes. Monday starts lined up, not scrambled.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nRun the reset tonight, message me directly what it found."
+    "win": "A Monday where your booking, pay, and morning setup have all been tested by you, so a customer never hits a dead end.",
+    "post": "*5-minute mission, Sunday. Boss level.*\n\nThis week you made a QR code that books you, a signature that carries your link, a one tap morning, a pay link, check-in texts that send on their own, and a list your whole crew can update. Tonight, test it all like a customer would.\n\nThe test run: scan your QR code and open your booking page. Tap the link and phone number in your own email signature. Open your pay link and check the name on it. Run your morning start and check the calendar and weather. Read the replies to this week's check-in texts. Open the crew list, clear what is done, and move what is left to Monday.\n\nFive minutes. You find the one break now, not a customer on Monday.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nRun the test tonight, message me directly what it found."
   }
 ]
 };
