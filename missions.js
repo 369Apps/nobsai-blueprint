@@ -11,90 +11,90 @@
    Never call readers "agents" in copy. */
 
 const MISSION_WEEKS = {
-"2026-10-26": [
+"2026-11-02": [
   {
-    "title": "A QR code that opens your booking page",
-    "tagline": "People will not type a long link. They will point a phone at a square and tap once.",
+    "title": "Pin your hot leads to the top of your chats",
+    "tagline": "A warm lead texts you, then ten new chats bury it. Pin it to the top and it stays where you can see it.",
     "time": "5 min",
     "steps": [
-      "Open your booking link or your intake form link in the Chrome app on your phone. Tap Share, then tap the QR code option.",
-      "Save the QR picture to your photos. Print one copy for the truck, the counter, or the job site, and keep the picture on your phone to text to people.",
-      "Test it before you use it. Point your camera at the printed copy and make sure the right page opens."
+      "Open WhatsApp or Messages and find the three chats that could turn into paid work this week. The quote you sent, the person who asked for a price, the past customer who said maybe.",
+      "WhatsApp: press and hold the chat, then tap the pin at the top. Messages on iPhone: swipe right on the chat and tap the pin. Do it for all three chats.",
+      "Leave them pinned until the job is booked or the answer is no. Then unpin and pin the next warm one in its place."
     ],
-    "win": "The first customer who scans the square and lands on your page without you typing or spelling a link.",
-    "post": "*5-minute mission, Monday.*\n\nYou tell a customer to book online. Then you spell a long link out loud, they type it wrong, and the job just fades away.\n\nThe fix: a QR code does the typing for them.\n\nOpen your booking link or intake form link in Chrome on your phone. Tap Share, then tap the QR code option. Save the picture, print one copy for the truck or the counter, and keep one on your phone to text to people. Test it with your own camera first and make sure the right page opens.\n\nNow a customer points, taps, and books. No spelling, no wrong link.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nMake your QR code today, message me directly how it goes."
+    "win": "A full day where your three best shots at paid work sit at the top of your screen every time you open your chats.",
+    "post": "*5-minute mission, Monday.*\n\nA warm lead texts you in the morning. By lunch, ten new chats have buried it. By Friday, you forgot they ever asked.\n\nThe fix: pin the hot ones to the top so they can not sink.\n\nOpen WhatsApp or Messages and find the three chats that could turn into paid work this week. The quote you sent, the price ask, the maybe. In WhatsApp, press and hold the chat and tap the pin. On iPhone Messages, swipe right on the chat and tap the pin.\n\nLeave them pinned until the job books or the answer is no. Then swap in the next warm one.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nPin your three today, message me directly how it goes."
   },
   {
-    "title": "Every email you send carries your booking link",
-    "tagline": "You send emails all day. Right now they end with just your name. They could end with a way to book you.",
+    "title": "Put the job address inside every calendar job",
+    "tagline": "The address lives in a text. The job lives on your calendar. Put them in the same place and one tap drives you there.",
     "time": "5 min",
     "steps": [
-      "Open the Gmail app. Tap the menu, tap Settings, pick your account, then open the signature setting and turn it on.",
-      "Write three short lines: your name and business name, your phone number, and one line that says Book here with your booking or intake link pasted under it.",
-      "Send one test email to yourself. Check that the link opens the right page and the phone number is easy to tap."
+      "Open your calendar and tap your next job. Tap Edit, find the location or address field, and paste the full job address in. Save it.",
+      "Do the same for the rest of this week's jobs. If the address is in a text, press and hold it, copy it, and paste it into the job.",
+      "Test it: open tomorrow's job and tap the address. Your maps app should open with the drive ready to start."
     ],
-    "win": "The first booking that comes from an email you would have sent anyway, with no extra work.",
-    "post": "*5-minute mission, Tuesday.*\n\nEvery email you send ends the same way, with just your name. The person reading it has to hunt for your number and has no easy way to book you.\n\nThe fix: let every email carry the link for you.\n\nOpen the Gmail app. Menu, Settings, pick your account, then open the signature setting and turn it on. Write three short lines: your name and business name, your phone number, and a line that says \"Book here\" with your booking or intake link under it.\n\nSend a test email to yourself and tap the link to check it. From now on, every reply you send is also a way to hire you.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nAdd your signature today, message me directly how it goes."
+    "win": "The first morning you tap one address on your calendar and the drive starts, with no digging through old texts.",
+    "post": "*5-minute mission, Tuesday.*\n\nThe job is on your calendar. The address is in a text from three days ago. So you dig, you scroll, you type, and you leave late.\n\nThe fix: put the address inside the job itself.\n\nOpen your calendar, tap your next job, tap Edit, and paste the full address into the location field. Save it. Do the same for the rest of this week's jobs. Copy the address right out of the customer's text if that is where it lives.\n\nNow open tomorrow's job and tap the address. The drive opens, ready to go.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nAdd your addresses today, message me directly how it goes."
   },
   {
-    "title": "One tap starts your whole work morning",
-    "tagline": "Calendar, weather, first job address. You open three apps in a fog. One button can open them in order.",
+    "title": "Scan paper bills into one clean PDF folder",
+    "tagline": "Paper bills land in the truck, the desk, and a coat pocket. Your phone camera can turn each one into a clean file in seconds.",
     "time": "5 min",
     "steps": [
-      "iPhone: open the Shortcuts app and tap the plus to make a new shortcut named Start my day. Android: open Google Assistant settings and start a new routine with the same name.",
-      "Add three things in this order: show today's calendar, show the weather where you are, and open the address of your first job in Maps.",
-      "Put the shortcut or routine on your home screen. Tomorrow, tap it once with your coffee and let the phone line up your morning."
+      "Make one folder first. In Google Drive or your Files app, make a folder named Bills 2026. Every scan goes here and nowhere else.",
+      "iPhone: open Notes, start a new note, tap the camera, and pick Scan Documents. Android: open Google Drive, tap the plus, and pick Scan. Lay the bill flat and let the phone grab the edges.",
+      "Name each file with the date and who sent it, like Nov 2 power bill, and save it in the folder. Scan the three loose bills sitting near you right now."
     ],
-    "win": "A morning where one tap shows your jobs, the weather, and the drive to the first job.",
-    "post": "*5-minute mission, Wednesday.*\n\nYour morning starts with digging. Calendar in one app, weather in another, the first address buried in a text. Half awake, three apps, things get missed.\n\nThe fix: one tap runs the whole start for you.\n\nOn iPhone, open Shortcuts, tap the plus, and make one named \"Start my day\". On Android, make a Google Assistant routine with the same name. Add three things in order: today's calendar, the weather where you are, and the first job address in Maps. Put it on your home screen.\n\nTomorrow, one tap with your coffee. Jobs, weather, and the drive, all lined up.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nBuild your one tap start today, message me directly how it goes."
+    "win": "The first time you need a bill and you open one folder and find it in seconds, instead of hunting through the truck.",
+    "post": "*5-minute mission, Wednesday.*\n\nPaper bills end up everywhere. One in the truck, one on the desk, one in a coat pocket. When you need one, you hunt for an hour.\n\nThe fix: your phone camera turns each bill into a clean file, in one folder.\n\nMake a folder named \"Bills 2026\" in Google Drive or your Files app. On iPhone, open Notes, start a note, tap the camera, and pick Scan Documents. On Android, open Drive, tap the plus, and pick Scan. Name each file with the date and who sent it, and save it in the folder.\n\nStart with the three loose bills near you right now. From today, paper goes in the folder the day it lands.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nScan your first bills today, message me directly how it goes."
   },
   {
-    "title": "One saved link gets you paid",
-    "tagline": "The job is done and the payment talk gets slow. A link you can send in two taps ends that talk fast.",
+    "title": "Give your best customers a ring you can hear",
+    "tagline": "Every call sounds the same, so you jump for spam and miss the good ones. Your top customers get their own sound.",
     "time": "5 min",
     "steps": [
-      "Open the app you already use to get paid, like Square, Stripe, PayPal, Venmo, or Cash App. Find your pay me link, payment link, or your pay tag in the settings or receive section.",
-      "Copy the link and save it in a pinned note titled Pay me link. Add the exact amount line you will send with it, like: Here is the link for today's job.",
-      "Test the link by opening it yourself. Make sure it shows your business name and lets a customer pay without making an account first if the app allows it."
+      "Open Contacts and pick your five best customers. The ones whose jobs you never want to miss, plus your top supplier.",
+      "Open one contact, tap Edit, and find Ringtone or Text Tone. Pick a sound you do not use for anyone else. Save, then do the same for the other four.",
+      "Now the rule: that sound means drop what you are doing and pick up. Every other call can wait for your next break."
     ],
-    "win": "The first job where you send one link at the door and the pay notice lands before you leave.",
-    "post": "*5-minute mission, Thursday.*\n\nThe work is done. Then comes the slow part. Checks, cash runs, \"send me your details\", and you are still chasing pay days later.\n\nThe fix: one pay link, saved and ready before you need it.\n\nOpen the app you already use to get paid, like Square, Stripe, PayPal, Venmo, or Cash App. Find your pay me link or pay tag, copy it, and save it in a pinned note titled \"Pay me link\". Test it yourself and make sure it shows your business name.\n\nNext finished job, copy, paste, send, right at the door. The slow talk is over.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSave your pay link today, message me directly how it goes."
+    "win": "The first time you hear that sound from across the room and know it is real money calling, before you even look.",
+    "post": "*5-minute mission, Thursday.*\n\nEvery call on your phone sounds the same. So you run for spam, and the one call that was real money sits in voicemail.\n\nThe fix: your best customers get a sound of their own.\n\nOpen Contacts and pick your five best customers, plus your top supplier. Open one, tap Edit, find Ringtone or Text Tone, and pick a sound you use for no one else. Save it, then do the same for the other four.\n\nFrom now on, that sound means pick up. Every other call can wait for your break.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSet your five rings today, message me directly how it goes."
   },
   {
-    "title": "Schedule tomorrow's check-in while you are still on the job",
-    "tagline": "You mean to check in the next day. Then the next day eats you. Write it now, let the phone send it later.",
+    "title": "A reminder that fires when you leave the shop",
+    "tagline": "You mean to lock up, grab the tools, and check the back door. Then you drive off and think of it a mile down the road.",
     "time": "5 min",
     "steps": [
-      "Before you leave a finished job, open a text to that customer and write a short check-in: Hi, this is me from yesterday. All good with the work? Reply here if you need a thing.",
-      "iPhone: tap the plus in Messages and pick Send Later, then pick tomorrow at 9 in the morning. Android: in Messages, hold the send button and pick tomorrow morning.",
-      "Leave the job and forget about it. The text sends itself at the time you picked, while you are on the next job."
+      "Open Reminders on iPhone or Google Keep on Android and write your leave the shop list: lock the back door, grab tomorrow's tools, take a photo of the board, set the alarm.",
+      "iPhone: open the reminder, tap the location option, and pick When I Leave, then set your shop address. Android: in Keep, open the note, tap Remind me, and pick a place, then set your shop address.",
+      "Walk out the door and test it. Your phone should buzz with the list while you are still in the lot, not a mile down the road."
     ],
-    "win": "The first reply to a check-in text you wrote yesterday and did not have to think about today.",
-    "post": "*5-minute mission, Friday.*\n\nYou finish a job and tell yourself you will check in tomorrow. Tomorrow brings three new jobs, and the check-in never happens. Small problems sit and grow.\n\nThe fix: write the check-in while you are still standing there, and let the phone send it.\n\nOpen a text to the customer before you leave. Write: \"Hi, this is me from yesterday. All good with the work? Reply here if you need a thing.\" On iPhone, tap the plus in Messages and pick Send Later for tomorrow at 9. On Android, hold the send button in Messages and pick tomorrow morning.\n\nYou forget it. The phone does not. The text lands on time, every time.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSchedule one check-in today, message me directly how it goes."
+    "win": "The first time your phone buzzes in the parking lot with the one thing you were about to drive off without.",
+    "post": "*5-minute mission, Friday.*\n\nYou leave the shop and a mile down the road it hits you. Did I lock the back door? Did I grab the tools for tomorrow?\n\nThe fix: a reminder that fires when you leave, not at a set time.\n\nWrite your leave the shop list in Reminders on iPhone or Google Keep on Android: lock the back door, grab tomorrow's tools, photo of the board, set the alarm. On iPhone, open the reminder and set the location to When I Leave with your shop address. On Android, open the Keep note, tap Remind me, pick a place, and set the shop address.\n\nWalk out and test it. The buzz comes in the lot, while you can still walk back in.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSet your leave reminder today, message me directly how it goes."
   },
   {
-    "title": "One list the whole crew can update",
-    "tagline": "Supplies, fixes, small jobs. They reach you as ten texts from three people. One shared list holds them all.",
+    "title": "Save your work area map for dead zones",
+    "tagline": "One dead zone on the way to a job and your maps go blank. Save the map now, while you have signal, and it works with none.",
     "time": "5 min",
     "steps": [
-      "Open Apple Reminders or Google Keep and make one list or note titled Crew list. Add the three things sitting in your head right now.",
-      "Tap Share and add your helper, partner, or crew. Anyone on the list can add a line or check one off when it is done.",
-      "Tell the crew one rule: if it is not on the list, it does not exist. From now on they add it there instead of texting you."
+      "Open Google Maps and tap your profile picture, then tap Offline maps. On iPhone with Apple Maps, open Maps, tap your picture, and pick Offline Maps there.",
+      "Tap Select your own map or Download, drag the box over the area where you work and drive most, and tap Download. Let it finish while you are on wifi.",
+      "Test it: turn on airplane mode, open the map, and search for a street in your work area. It should open and give you the drive with no signal at all."
     ],
-    "win": "The first supply or small job that shows up on the list without a text, a call, or you holding it in your head.",
-    "post": "*5-minute mission, Saturday.*\n\nYour crew tells you things all day. We are out of tape. The back door sticks. Mrs Lee needs a call. Ten texts, three people, and you are the list.\n\nThe fix: one list everyone can touch.\n\nOpen Apple Reminders or Google Keep and make one list titled \"Crew list\". Add the three things in your head right now. Tap Share and add your helper, partner, or crew. They can add a line or check one off when it is done.\n\nOne rule: if it is not on the list, it does not exist. Now the list holds it, not your head.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nStart your crew list today, message me directly how it goes."
+    "win": "The first dead zone you drive through where your map keeps working and you roll up to the job on time anyway.",
+    "post": "*5-minute mission, Saturday.*\n\nYou are on the way to a job, the signal drops, and your map goes blank. Now you are guessing turns with a customer waiting.\n\nThe fix: save your work area map to the phone today, while you have signal.\n\nOpen Google Maps, tap your profile picture, then Offline maps, then Select your own map. Drag the box over the area where you work and drive most, and tap Download. On Apple Maps, open Maps, tap your picture, and pick Offline Maps. Let it finish on wifi.\n\nTest it in airplane mode. The map and the drive still work with no signal at all.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nSave your map today, message me directly how it goes."
   },
   {
-    "title": "The Sunday test run",
-    "tagline": "The weekly boss mission. Be your own customer for five minutes and find the one break before a real customer does.",
+    "title": "The Sunday phone clean-up",
+    "tagline": "The weekly boss mission. Five minutes to check every small setup from this week and start Monday clean.",
     "time": "5 min",
     "steps": [
-      "Scan and tap: point your camera at your QR code and open your booking page. Read one email you sent and tap your own signature link and phone number.",
-      "Pay and morning: open your saved pay link and check the name on it is yours. Run your Start my day shortcut or routine and check the calendar and weather come up right.",
-      "People check: look for any check-in texts you scheduled this week and read the replies. Open the crew list, clear what is done, and move what is left to Monday."
+      "Chats and drives: open your pinned chats. Unpin any lead that booked or went cold, and pin the next warm one. Open Monday's calendar job and tap its address to check the drive opens.",
+      "Files and sounds: open your Bills 2026 folder and scan any paper bill still sitting out. Call your own phone from a second phone if you can, or check that your five best customers still have their own ring set.",
+      "Leave test: read your leave the shop list once and cut any line you no longer need. Check your saved map is still there, then clear your home screen of any app you opened all week by mistake."
     ],
-    "win": "A Monday where your booking, pay, and morning setup have all been tested by you, so a customer never hits a dead end.",
-    "post": "*5-minute mission, Sunday. Boss level.*\n\nThis week you made a QR code that books you, a signature that carries your link, a one tap morning, a pay link, check-in texts that send on their own, and a list your whole crew can update. Tonight, test it all like a customer would.\n\nThe test run: scan your QR code and open your booking page. Tap the link and phone number in your own email signature. Open your pay link and check the name on it. Run your morning start and check the calendar and weather. Read the replies to this week's check-in texts. Open the crew list, clear what is done, and move what is left to Monday.\n\nFive minutes. You find the one break now, not a customer on Monday.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nRun the test tonight, message me directly what it found."
+    "win": "A Monday where your leads are on top, your first drive is one tap, your bills are filed, and your phone works for you in dead zones too.",
+    "post": "*5-minute mission, Sunday. Boss level.*\n\nThis week you pinned your hot leads, put job addresses inside your calendar, scanned paper bills into one folder, gave your best customers their own ring, set a reminder that fires when you leave the shop, and saved your work map for dead zones. Tonight, check it all in one clean pass.\n\nThe clean-up: open your pinned chats, unpin what booked or went cold, and pin the next warm lead. Tap the address on Monday's job and check the drive opens. Scan any paper bill still sitting out into your Bills 2026 folder. Check your five best customers still have their own ring. Read your leave the shop list once and cut what you do not need.\n\nFive minutes. Monday starts clean, and nothing small is left to chance.\n\nUse it in your business, or set it up for a client. Same 5 minutes either way.\n\nFree resource, the full setup: https://blueprint.nobsai.com?ref=NB-SHARE\n\nRun the clean-up tonight, message me directly what it found."
   }
 ]
 };
